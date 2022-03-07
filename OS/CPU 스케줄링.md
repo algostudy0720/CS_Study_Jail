@@ -1,8 +1,5 @@
 # [OS] CPU 스케줄링
 
-상태: 완료 🙌
-작성일시: 2022년 3월 7일 오후 8:13
-
 # 1. 스케줄링
 
 - CPU가 효율적으로 작업할 수 있도록 프로세스(작업)를 배정하는 작업
@@ -50,7 +47,7 @@
 
 ## 1-4. 프로세스 상태 전이도
 
-![Untitled](%5BOS%5D%20CPU%20%E1%84%89%209d926/Untitled.png)
+![1](https://user-images.githubusercontent.com/45481007/157034280-932d430b-1ccc-4b86-bdf3-ac743c51aeec.png)
 
 ### 1-4-1. 프로세스의 상태 전이
 
@@ -88,7 +85,7 @@ Q. Waiting과 Ready의 차이?
     - 우선순위가 낮은 큐들이 Starvation에 빠지지 않도록 각 큐마다 다른 Time Quantum을 설정
     - 우선순위가 높은 큐는 빠른 응답을 위해 작은 Time Quantum, 우선순위가 낮은 큐는 큰 Time Quantum을 설정
     
-    ![Untitled](%5BOS%5D%20CPU%20%E1%84%89%209d926/Untitled%201.png)
+    ![2](https://user-images.githubusercontent.com/45481007/157034290-2ec5db5d-f277-447f-8b2c-03b56a997d41.png)
     
 - Multi Level Feedback Queue(다단계 피드백 큐)
     - 다단계 큐에서 자신의 Time Quantum을 다 채운 프로세스는 TimeQuantum이 더 긴 하위 큐로 내려가고 자신의 TimeQuantum을 다 채우지 못한 프로세스는 원래 큐 그대로
@@ -96,7 +93,7 @@ Q. Waiting과 Ready의 차이?
     - 짧은 작업에 유리, 입출력 위주(Inturrupt가 잦은) 작업에 우선권을 줌
     - 처리시간이 짧은 프로세스를 먼저 처리하므로 Turn Around의 평균시간을 줄여줌
     
-    ![Untitled](%5BOS%5D%20CPU%20%E1%84%89%209d926/Untitled%202.png)
+    ![3](https://user-images.githubusercontent.com/45481007/157034295-3ee4f004-060e-4423-b5d9-700d3b62378a.png)
     
     - 예를 들어 작업량이 15인 작업 P를 우선순위 0인 큐에서 QT가 3으로 작업중에 입출력이 발생하면 작업 P는 같은 큐에 머무르고 3만큼의 작업을 했지만 12의 작업량이 남아있으므로 하위 큐로 이동한다.
 
