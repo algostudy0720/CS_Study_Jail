@@ -1,5 +1,3 @@
-# [AL] Stack & Queue
-
 # 1. Stack
 
 - 책처럼 차곡차곡 쌓아 올린 형태의 자료구조
@@ -17,6 +15,7 @@
     - 후위 표시법
     - 수식의 괄호 검사
 
+
 # 2. Queue
 
 - 줄을 서서 기다리는 것과 같은 형태의 자료 구조
@@ -33,11 +32,12 @@
     - BFS
     - Cache 구현 등
 
+
 # 3. Question
 
 2개의 Stack을 사용하여 Queue를 구현하시오
 
-![Untitled](%5BAL%5D%20Stack%20863a0/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/45481007/159229080-c13483dd-9fd9-43f5-a8c1-2ef482654e5d.png)
 
 1. inBox에 데이터를 삽입(push)한다. → A,B
 2. inbox에서 데이터를 추출(pop)하여 outBox에 삽입(push)한다. → B, A
