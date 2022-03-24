@@ -1,11 +1,11 @@
-# [AL] Tree
-
 # 1. Tree
 
 - Node와 Edge로 이루어진 자료구조
 - 나무의 뿌리 같은 가계도 형태
 
-![Untitled](%5BAL%5D%20Tree%20c1f4e/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/45481007/159903593-8d5d32ce-0cfa-4944-b551-cdef36a56990.png)
+
+<br/>
 
 ## 1-1. 용어 정리
 
@@ -19,6 +19,8 @@
 - Sibling(Brother Node) : 동일한 Parent Node를 가진 같은 Level의 노드
 - Depth : 트리에서 노드가 가질 수 있는 최대 Level
 
+<br/>
+
 ## 1-2. 트리의 특징
 
 - 사이클이 존재할 수 없음 → 사이클이 존재한다? ⇒ 그래프
@@ -26,9 +28,11 @@
 - 루트에서 임의의 한 노드로 이동하는 경로는 유일
 - 노드의 갯수가 N개면 간선은 N-1개 존재
 
+<br/>
+
 ## 1-3. 트리의 순회 방식
 
-![Untitled](%5BAL%5D%20Tree%20c1f4e/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/45481007/159903601-463b2200-e3b2-42e0-9a0a-af46b11ff6f5.png)
 
 1. 전위 순회(Pre Order)
     - Root Node를 시작으로 왼쪽 자식 → 오른쪽 자식 노드 순으로 순회
@@ -45,3 +49,9 @@
 4. 레벨 순회(Level Order)
     - Root 노드로 시작해서 왼쪽부터 Level 순으로 순회
     - 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → 10 → 11 → 12 → 13 → 14
+
+<br/>
+
+### [출처]
+
+https://github.com/gyoogle/tech-interview-for-developer/blob/master/Computer%20Science/Data%20Structure/Tree.md
