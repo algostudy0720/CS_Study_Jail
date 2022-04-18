@@ -1,9 +1,9 @@
-# [DB] 조인(Join)
-
 # 1. Join
 
 - 둘 이상의 테이블을 연결해서 데이터를 검색하는 방법
 - 각 테이블을 연결하려면 둘 이상의 테이블이 적어도 하나의 컬럼을 공유하고 있어야 함
+
+<br/>
 
 # 2. Join의 종류
 
@@ -19,9 +19,11 @@
 4. Self Join
     - 자신의 테이블과 자신의 테이블을 Join
 
+<br/>
+
 ## 2-1. Inner Join
 
-![Untitled](%5BDB%5D%20%E1%84%8C%E1%85%A9%E1%84%8B%E1%85%B5%E1%86%AB%20ddedc/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/45481007/163798061-f960e100-a7bc-4502-a397-19bed970d82a.png)
 
 - 교집합
 - 기준 테이블과 Join 테이블의 중복된 값
@@ -32,10 +34,11 @@ A.NAME, B.AGE
 FROM EX_TABLE A
 INNER JOIN JOIN_TABLE B ON A.NO_EMP = B.NO_EMP
 ```
+<br/>
 
 ## 2-2. Outer Join
 
-![Untitled](%5BDB%5D%20%E1%84%8C%E1%85%A9%E1%84%8B%E1%85%B5%E1%86%AB%20ddedc/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/45481007/163798068-6566d0f5-c212-4cd1-a7f1-12aac7027602.png)
 
 ### 2-2-1. Left Outer Join
 
@@ -48,6 +51,7 @@ A.NAME, B.AGE
 FROM EX_TABLE A
 LEFT OUTER JOIN JOIN_TABLE B ON A.NO_EMP = B.NO_EMP
 ```
+<br/>
 
 ### 2-2-2. Right Outer Join
 
@@ -59,6 +63,7 @@ A.NAME, B.AGE
 FROM EX_TABLE A
 RIGHT OUTER JOIN JOIN_TABLE B ON A.NO_EMP = B.NO_EMP
 ```
+<br/>
 
 ### 2-2-3. Full Outer Join
 
@@ -71,10 +76,11 @@ A.NAME, B.AGE
 FROM EX_TABLE A
 FULL OUTER JOIN JOIN_TABLE B ON A.NO_EMP = B.NO_EMP
 ```
+<br/>
 
 ## 2-3. Cross Join
 
-![Untitled](%5BDB%5D%20%E1%84%8C%E1%85%A9%E1%84%8B%E1%85%B5%E1%86%AB%20ddedc/Untitled%202.png)
+![Untitled 2](https://user-images.githubusercontent.com/45481007/163798072-36c531aa-59f2-481b-a565-331a3107c625.png)
 
 - 모든 경우의 수를 전부 표현
 - A가 3개, B가 3개면 총 3*3 = 9개의 데이터가 검색
@@ -85,12 +91,12 @@ A.NAME, B.AGE
 FROM EX_TABLE A
 CROSS JOIN JOIN_TABLE B
 ```
+<br/>
 
 ## 2-4. Self Join
 
-![Untitled](%5BDB%5D%20%E1%84%8C%E1%85%A9%E1%84%8B%E1%85%B5%E1%86%AB%20ddedc/Untitled%203.png)
-
-![Untitled](%5BDB%5D%20%E1%84%8C%E1%85%A9%E1%84%8B%E1%85%B5%E1%86%AB%20ddedc/Untitled%204.png)
+![Untitled 3](https://user-images.githubusercontent.com/45481007/163798077-b6bba8c9-bf63-4d7e-9ef0-f285205407fa.png)
+![Untitled 4](https://user-images.githubusercontent.com/45481007/163798086-47e3f372-5c92-42ea-ba52-9a8498e05506.png)
 
 - 자기 자신과 자기 자신을 join
 - 하나의 테이블을 복사해서 Join한다고 생각
@@ -101,6 +107,7 @@ SELECT
 A.NAME, B.AGE
 FROM EX_TABLE A, EX_TABLE B
 ```
+<br/>
 
 ### [출처]
 
