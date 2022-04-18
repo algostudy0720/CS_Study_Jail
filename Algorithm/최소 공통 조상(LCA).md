@@ -1,17 +1,18 @@
-# [AL] 최소 공통 조상(LCA)
-
 # 1. 최소 공통 조상(LCA, Lowest Common Ancester)
 
 - 트리 구조에서 임의의 두 정점이 가지는 가장 가까운 조상 정점
 
-![Untitled](%5BAL%5D%20%E1%84%8E%E1%85%AC%E1%84%89%E1%85%A9%20%208b003/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/45481007/163776814-9d1202a3-9753-408d-b3c8-d8e53ffc997b.png)
 
 - 위의 트리에서 두 정점 13, 15의 공통 조상은 5가 된다.
+
+<br/>
 
 ## 1-1. 구현 개념
 
 - 해당 정점들의 depth와 parent를 따로 저장한다.
 - 두 배열 정보를 활용하여 두 정점이 주어졌을 때 depth를 조절하며 공통 조상을 찾는다.
+<br/>
 
 ## 1-2. 구현 코드
 
@@ -37,10 +38,11 @@ while(true){
       더 depth가 깊은 정점을 해당 정점의 parent 정점으로 변경(depth가 감소됨)
 }
 ```
+<br/>
 
 ## 1-3. 예시
 
-![Untitled](%5BAL%5D%20%E1%84%8E%E1%85%AC%E1%84%89%E1%85%A9%20%208b003/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/45481007/163776818-0b7d2428-b308-4b23-b81c-ec33cd4fb90d.png)
 
 ```jsx
 void LCA(int a, int b){
@@ -66,6 +68,7 @@ void LCA(int a, int b){
   }
 }
 ```
+<br/>
 
 ### [출처]
 
