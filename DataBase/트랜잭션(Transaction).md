@@ -65,7 +65,8 @@
     - 비휘발성 장치인 Disk에 저장
     - 일부는 Main Memory에 저장
     
-    ![Untitled](%5BDB%5D%20%E1%84%90%E1%85%B3%E1%84%85%E1%85%A2%E1%86%AB%E1%84%8C%E1%85%A2%E1%86%A8%E1%84%89%E1%85%A7%E1%86%AB(Transaction)%2074c9fdeaaaee49c4a2eed2823bd9ae5a/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/45481007/166223746-c94bee56-ed89-4287-9970-38f855aa80c6.png)
+
     
 2. 1. Page Buffer Manager / Buffer Manager
     - DBMS의 저장 시스템에 속하는 모듈 중 하나
