@@ -9,6 +9,7 @@
 3. Client -> Server : TCP ACK
 
 - 양쪽 모두 데이터를 전송할 준비 되었다는 것을 보장하고, 데이터 전달을 시작하기 전에 한쪽이 다른 쪽이 준비되었다는 것을 알 수 있도록 한다.
+
 ![225A964D52F1BB6917](https://user-images.githubusercontent.com/55469012/170932347-89a7708d-6a51-44f0-ac58-5e1d1fd169f3.png)
 
 1. 클라이언트는 에 접속을 요청하는 SYN 패킷을 보낸다. 클라이언트는 SYN을 보내고 SYN+ACK 응답을 기다리는 SYN-SENT 상태가 된다.
