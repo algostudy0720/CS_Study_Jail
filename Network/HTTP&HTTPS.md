@@ -26,4 +26,4 @@
 6. 암호화된 인증서를 복호화하여 얻은 A기업의 공개키로 세션키를 공유함
 
 
-출처: https://mangkyu.tistory.com/98 
+출처: https://mangkyu.tistory.com/98
